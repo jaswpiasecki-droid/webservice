@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 odp = 'Odopwiedź'
 
-@app.route("/strona/")
+@app.route("/")
 def hello_world():
     return '<p>Hej</p>'
 

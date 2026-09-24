@@ -12,7 +12,7 @@
 
 
             async function zapytaj() {
-                const pytanie = await fetch('http://127.0.0.1:5000/')
+                const pytanie = await fetch('https://jaswpiasecki-droid.github.io/webservice/')
                 const dane = await pytanie.json();
                 console.log(dane)
                 $('#1').text(dane)

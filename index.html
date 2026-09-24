@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 id="i"></h1>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+
+
+
+
+
+            async function zapytaj() {
+                const pytanie = await fetch('http://127.0.0.1:5000/')
+                const dane = await pytanie.json();
+                console.log(dane)
+                $('#1').text(dane)
+            }
+
+        
+            $('#i').text(zapytaj())
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
